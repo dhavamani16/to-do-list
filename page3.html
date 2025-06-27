@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="todo-box">
+      <h2>To-Do List</h2>
+      <div class="progress-container">
+        <p>Keep it Up!</p>
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="task-count">0/0</div>
+      </div>
+      <div class="input-group">
+        <input type="text" id="task-input" placeholder="Add a new task" />
+        <button onclick="addTask()">+</button>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
